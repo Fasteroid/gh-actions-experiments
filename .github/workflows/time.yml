@@ -1,4 +1,4 @@
-name: Push the current time to the "time" branch
+name: Update data.time
 
 on:
   repository_dispatch:

@@ -1,6 +1,6 @@
 git config set advice.defaultBranchName false
-git config --global user.email "action@github.com"
-git config --global user.name "GitHub Action"
+git config --global user.email "223176432+fasteroidbot@users.noreply.github.com"
+git config --global user.name "FasteroidBot"
 
 mkdir -p __time
 cd __time
