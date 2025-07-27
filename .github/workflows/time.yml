@@ -1,0 +1,20 @@
+name: Push the current time to the "time" branch
+
+on:
+  repository_dispatch:
+    types: [time]
+
+jobs:
+  force-push-file:
+    runs-on: ubuntu-latest
+    
+    steps:
+
+    - name: Fetch Scripts
+      uses: actions/checkout@v4
+    
+    - name: Configure Git
+      run: bash ./resources/time/git.sh
+    
+    - name: Push
+      run: bash ./resources/time/push.sh
