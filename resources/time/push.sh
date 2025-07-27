@@ -1,3 +1,4 @@
+git config set advice.defaultBranchName false
 git config --global user.email "action@github.com"
 git config --global user.name "GitHub Action"
 
@@ -6,7 +7,9 @@ cd __time
 
 # Initialize a new git repo in the subdirectory
 git init
-git remote add origin  "https://x-access-token:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
+git remote add origin "https://x-access-token:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
+
+echo "https://x-access-token:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
 
 # Get the time
 date > time
