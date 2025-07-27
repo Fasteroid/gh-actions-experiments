@@ -6,7 +6,7 @@ cd __time
 
 # Initialize a new git repo in the subdirectory
 git init
-git remote add origin ${{ github.server_url }}/${{ github.repository }}.git
+git remote add origin  "https://x-access-token:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
 
 # Get the time
 date > time

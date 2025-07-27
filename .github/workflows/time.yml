@@ -13,5 +13,8 @@ jobs:
     - name: Fetch Scripts
       uses: actions/checkout@v4
     
-    - name: Git Push
+    - name: Git The Time
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_REPOSITORY: ${{ github.repository }}
       run: bash ./resources/time/push.sh
