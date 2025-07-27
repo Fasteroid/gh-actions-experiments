@@ -1,0 +1,17 @@
+name: ls
+
+on:
+  repository_dispatch:
+    types: [ls]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read # todo
+    steps:
+      - name: ls
+        id: ls
+        run: |
+            pwd
+            ls -la
