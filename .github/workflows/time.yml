@@ -13,8 +13,5 @@ jobs:
     - name: Fetch Scripts
       uses: actions/checkout@v4
     
-    - name: Configure Git
-      run: bash ./resources/time/git.sh
-    
-    - name: Push
+    - name: Git Push
       run: bash ./resources/time/push.sh
