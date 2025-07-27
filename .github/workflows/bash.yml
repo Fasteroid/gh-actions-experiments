@@ -10,6 +10,8 @@ jobs:
     permissions:
       contents: read # todo
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
       - name: Execute
         id: bash
         run: bash ./resources/bash/script.sh
